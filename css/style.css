@@ -1077,6 +1077,10 @@ CITOYEN·NES*/
     flex: 0 0 100%;
   }
 
+  .slogan {
+    margin-left: 30px;
+  }
+
   .engages-biodiversite .section-title {
     font-size: 40px;
   }
