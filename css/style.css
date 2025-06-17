@@ -1081,6 +1081,17 @@ CITOYEN·NES*/
     margin-left: 30px;
   }
 
+  .engages-card h3 {
+    font-size: 16px;
+  }
+
+  .solutions-block {
+    padding: 0;
+  }
+  .engages-biodiversite .intro-text {
+    font-size: 16px !important;
+  }
+
   .engages-biodiversite .section-title {
     font-size: 40px;
   }
