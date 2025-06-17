@@ -932,6 +932,12 @@ html {
     }
 }
 
+@media (max-width: 1024px) {
+    .slider-next {
+        right: -16px !important;
+    }
+}
+
 @media (max-width: 576px) {
     .engages-grid {
         grid-template-columns: 1fr;
