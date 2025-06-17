@@ -1,0 +1,1080 @@
+/* Styles généraux */
+@font-face {
+  font-family: 'Marianne';
+  src: url('../fonts/Marianne-Thin/Marianne-Thin.otf') format('truetype');
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('../fonts/Marianne-Medium/Marianne-Medium.otf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('../fonts/Marianne-Light/Marianne-Light.otf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('../fonts/Marianne-ExtraBold/Marianne-ExtraBold.otf') format('truetype');
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Marianne';
+  src: url('../fonts/Marianne-Bold/Marianne-Bold.otf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Marianne', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Marianne', sans-serif;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header top styles */
+.header-top {
+  height: 210px;
+  border-top: 6px solid #04a64b;
+  padding-top: 24px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.header-top .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-top .row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+.header-top .col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 15px;
+}
+
+/* Logo container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Logo République Française */
+.logo-rf {
+  height: 120px;
+  width: auto;
+}
+
+/* Logo OFB */
+.logo-ofb {
+  height: 80px;
+  width: auto;
+}
+
+/* Slogan */
+.slogan {
+  font-family: 'Marianne', sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #333;
+  margin-left: 30px;
+}
+
+/* Lien retour */
+.text-right {
+  text-align: right;
+  margin-bottom: 90px;
+}
+
+.link-retour {
+  color: #666;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Marianne', sans-serif;
+  font-weight: 500;
+}
+
+.link-retour:hover {
+  color: #04a64b;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 815px) {
+  .slider-prev {
+    left: -10px !important;
+  }
+
+  .slider-next {
+    right: -10px !important;
+  }
+  .cta-buttons {
+    margin-right: 0px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .header-top .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .header-top .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .logo-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .slogan {
+    font-size: 24px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .text-right {
+    text-align: center;
+  }
+
+  .solutions-block h1 {
+    font-size: 35px !important;
+    text-align: center !important;
+  }
+
+  .margin-left-120 {
+    margin-left: 0px;
+  }
+
+}
+
+/* Header Principal */
+.header-main {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: relative;
+}
+
+.header-image {
+  background-image: url('../img/header-image.png');
+  background-size: cover;
+  background-position: center;
+  height: 710px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.header-content {
+  text-align: center;
+  padding-bottom: 60px;
+  width: 100%;
+}
+
+.sous-titre {
+  font-family: 'Marianne', sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-right: 36px;
+}
+
+.btn-cta {
+  padding: 18px 45px;
+  font-family: 'Marianne', sans-serif;
+  font-weight: 800; /* Plus gras pour correspondre à la maquette */
+  font-size: 40px; /* Taille réduite pour un meilleur équilibre */
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  letter-spacing: 1px; /* Espacement des lettres pour un meilleur rendu */
+  line-height: 1.2;
+  border-radius: 0; /* Boutons rectangulaires */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ombre légère */
+}
+
+.btn-orange {
+  background-color: #ed6a53;
+}
+
+.btn-blue {
+  background-color: #59c6f2;
+}
+
+.btn-green {
+  background-color: #6bb970;
+}
+
+.btn-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Pour les très grands écrans */
+@media (min-width: 1920px) {
+  .header-image {
+    height: 816px;
+    background-image: url(../img/header-image-large.jpg) !important;
+  }
+
+  .btn-cta {
+    padding: 18px 40px;
+    font-size: 40px;
+    min-width: 220px;
+  }
+
+  .sous-titre {
+    margin-right: 100px;
+  }
+}
+
+
+
+@media (max-width: 1280px) {
+  .intro-text{
+    font-size: 20px !important;
+  }
+}
+
+/* Sections des Solutions */
+.solutions-block {
+  padding: 60px 0;
+  scroll-margin-top: 80px; /* ajuste à la hauteur de ton header */
+}
+
+
+.solutions-citoyen {
+  background-color: #ed6a53;
+  color: #fff;
+}
+
+.solutions-collectivites {
+  background-color: #59c6f2;
+  color: #fff;
+}
+
+.solutions-entreprises {
+  background-color: #6bb970;
+  color: #fff;
+}
+
+.solutions-block h2 {
+  font-family: 'Marianne', sans-serif;
+  font-weight: 100;
+  font-size: 45px;
+  margin-top: 25px;
+  text-transform: uppercase;
+  letter-spacing: 6px; /* Augmenté pour correspondre à l'espacement des lettres */
+  float: left;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.solutions-block h1 {
+  font-size: 50px;
+}
+
+#solution-collectivites h1, #solution-entreprise h1{
+  font-size: 40px;
+  margin-top: 30px;
+}
+#solution-collectivites .intro-text, #solution-entreprise .intro-text{
+  text-align: center;
+  clear: both;
+}
+
+.intro-text {
+  font-family: 'Marianne', sans-serif;
+  font-size: 23px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  font-weight: 700;
+  margin-left: 12px;
+}
+
+.biodiversite-campagne .intro-text.large {
+ text-align: left;
+  margin-top: -30px;
+}
+
+.biodiversite-campagne .intro-text.no-margin {
+  margin-top: -30px;
+}
+
+.margin-left-120{
+  margin-left: 120px;
+}
+
+/* Slider Container */
+.slider-container {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+/* Sliders pour les solutions */
+.solutions-slider {
+  display: flex;
+  transition: transform 0.5s ease;
+  overflow: visible;
+}
+
+.card-item {
+  padding: 0 15px;
+  width: 25%; /* Exactement 4 cartes visibles */
+  flex: 0 0 25%;
+  box-sizing: border-box;
+}
+
+.card-link {
+  display: block;
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 100%;
+  color: #333;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-link:hover {
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 0 0 3px rgba(50, 50, 50, 0.3); /* Gris foncé subtil */
+  transition: box-shadow 0.3s ease;
+}
+
+.card-image {
+  height: 180px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-item h3 {
+  font-family: 'Marianne', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 15px 15px 5px;
+  text-align: center;
+  color: #023b76;
+  margin-top: 0;
+}
+
+.card-item p {
+  font-family: 'Marianne', sans-serif;
+  font-size: 16px;
+  padding: 0 15px 15px;
+  text-align: center;
+  color: #023b76;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.link-icon {
+  display: block;
+  text-align: right;
+  padding: 0 15px 15px;
+  color: #ed6a53;
+}
+
+/* Navigation du slider */
+.slider-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Flèches de navigation */
+.slider-arrow {
+  position: absolute;
+  top: 65%;
+  transform: translateY(-50%);
+  border: none;
+  width: 50px;
+  height: 50px;
+  color: #3399cc;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+.slider-arrow.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.slider-arrow-mobile{
+  display: none !important;
+}
+
+.slider-prev {
+  left: -25px;
+}
+
+.slider-next {
+  right: -25px;
+}
+
+.slider-prev,
+.slider-next {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.slider-prev:hover,
+.slider-next:hover {
+  opacity: 1;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+}
+
+.slider-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-dots .dot.active {
+  background-color: #fff;
+}
+
+/* Section Engagés pour la biodiversité */
+/* Section Engagés pour la biodiversité */
+.engages-biodiversite {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.engages-biodiversite .section-title {
+  font-family: 'Marianne', sans-serif;
+  font-weight: 800;
+  font-size: 62px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #1c823b;
+  text-align: center;
+}
+
+.engages-biodiversite .intro-text {
+  color: #1c823b;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 900px;
+  margin: 0 auto 30px;
+}
+
+.engages-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.engages-card {
+  background-color: #fff;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: none;
+  transition: transform 0.2s ease;
+  border: 1px solid #023b76;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.engages-card:hover {
+  border-color: #1c823b;
+}
+
+.engages-card-large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* Modification de la carte audio pour qu'elle s'étende sur 2 colonnes mais dans une mise en page horizontale */
+.engages-card-audio {
+  grid-column: span 2;
+  grid-row: span 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.engages-card .card-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.engages-card-audio .card-link {
+  flex-direction: row;
+}
+
+/* Card Image Styling */
+.engages-card .card-image {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+}
+
+.engages-card-large .card-image {
+  height: 240px;
+}
+
+/* Modification de l'image pour la carte audio */
+.engages-card-audio .card-image {
+  width: 50%;
+  height: auto;
+  flex: 0 0 50%;
+}
+
+.engages-card .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Audio Wave Styling */
+.audio-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Custom SVG audio wave */
+.audio-wave:before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 100'%3E%3Cpath d='M0,50 L10,40 L20,60 L30,30 L40,70 L50,20 L60,80 L70,10 L80,90 L90,30 L100,70 L110,20 L120,80 L130,40 L140,60 L150,30 L160,70 L170,20 L180,80 L190,40 L200,60 L210,30 L220,70 L230,20 L240,80 L250,40 L260,60 L270,30 L280,70 L290,20 L300,80 L310,40 L320,60 L330,30 L340,70 L350,20 L360,80 L370,40 L380,60 L390,30 L400,70 L410,20 L420,80 L430,40 L440,60 L450,30 L460,70 L470,20 L480,80 L490,40 L500,60 L510,30 L520,70 L530,20 L540,80 L550,40 L560,60 L570,30 L580,70 L590,20 L600,80 L610,40 L620,60 L630,30 L640,70 L650,20 L660,80 L670,40 L680,60 L690,30 L700,70 L710,20 L720,80 L730,40 L740,60 L750,30 L760,70 L770,20 L780,80 L790,40 L800,60' fill='none' stroke='white' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* Card Content Styling */
+.engages-card .card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Modification du contenu pour la carte audio */
+.engages-card-audio .card-content {
+  width: 50%;
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.full-content {
+  height: 100%;
+}
+
+.engages-card h3 {
+  font-family: 'Marianne', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #1c823b;
+  margin-top: 0;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.engages-card-large h3 {
+  color: #1c823b;
+  font-size: 25px;
+}
+
+.engages-card p {
+  font-family: 'Marianne', sans-serif;
+  font-size: 17px;
+  color: #023b76;
+  margin-bottom: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Card Footer Styling */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.content-type {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #023b76;
+}
+
+.content-type i {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.external-link {
+  color: #023b76;
+  font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .engages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .engages-card-large, .engages-card-audio {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .engages-card-audio {
+    flex-direction: column;
+  }
+
+  .engages-card-audio .card-link {
+    flex-direction: column;
+  }
+
+  .engages-card-audio .card-image,
+  .engages-card-audio .card-content {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .engages-card-audio .card-image {
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .engages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .engages-card-large, .engages-card-audio {
+    grid-column: span 1;
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 1470px) {
+
+  .sous-titre {
+    font-size: 40px;
+  }
+  .btn-cta {
+    font-size: 32px;
+  }
+}
+/*DES SOLUTIONS POUR LES
+CITOYEN·NES*/
+@media (max-width: 1200px) {
+
+  .solutions-block h2{
+    font-size: 35px
+  }
+  .solutions-block h1 {
+    font-size: 40px;
+    clear: both;
+    margin-left: 20px;
+  }
+  .margin-left-120 {
+    margin-left: 90px;
+  }
+}
+
+@media (max-width: 1100px) {
+
+  .sous-titre {
+    font-size: 36px;
+    font-weight: 500;
+  }
+  .btn-cta {
+    font-size: 27px;
+    font-weight: 800;
+  }
+
+  .header-image {
+    height: 630px;
+  }
+}
+
+@media (max-width: 576px) {
+  .engages-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .engages-card-large,
+  .engages-card-audio {
+    grid-column: span 1;
+  }
+  
+  .engages-card .card-image {
+    height: 160px;
+  }
+  
+  .engages-card-large .card-image {
+    height: 180px;
+  }
+}
+
+
+/* Section La biodiversité part en campagne */
+.biodiversite-campagne {
+  padding: 40px 0;
+  background-color: #fff;
+  border-top: 1px solid #023b76;
+  margin: 20px 0;
+}
+
+.biodiversite-campagne h2 {
+  font-family: 'Marianne', sans-serif;
+  font-weight: 800;
+  font-size: 65px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #023b76; /* Bleu foncé pour le titre */
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.biodiversite-campagne .intro-text {
+  font-family: 'Marianne', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #023b76;
+  margin-bottom: 30px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+.biodiversite-campagne .row {
+  margin-top: 20px;
+}
+
+/* Nouvel élément simplifié pour les vidéos */
+.video-item {
+  margin-bottom: 20px;
+}
+
+.video-item a {
+  display: block;
+}
+
+.video-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-caption {
+  font-size: 16px;
+  color: #023b76;
+  line-height: 1.4;
+  margin: 10px 0 50px 35px;
+}
+
+/* Style pour les espaces entre les vidéos */
+.biodiversite-campagne .col-md-6:first-child {
+  padding-right: 10px;
+}
+
+.biodiversite-campagne .col-md-6:last-child {
+  padding-left: 10px;
+}
+
+/* Media query pour mobile */
+@media (max-width: 768px) {
+  .biodiversite-campagne .col-md-6:first-child,
+  .biodiversite-campagne .col-md-6:last-child {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .biodiversite-campagne h2 {
+    font-size: 24px;
+  }
+
+  .biodiversite-campagne .intro-text {
+    font-size: 13px;
+  }
+}
+
+/* Ajustements pour correspondre à la maquette */
+.biodiversite-campagne .container {
+  max-width: 1000px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* Format 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+/* Responsive */
+@media (max-width: 991px) {
+  .solutions-block h2 {
+    font-size: 30px;
+  }
+  
+  .card-item {
+    width: 33.333%;
+    flex: 0 0 33.333%;
+  }
+
+  .engages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .engages-card-large {
+    grid-column: span 2;
+  }
+
+  .engages-card-audio {
+    grid-column: span 1;
+  }
+  /*Bloc "Header principal" */
+  .sous-titre {
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .btn-cta {
+    font-size: 20px;
+    font-weight: 1000;
+  }
+
+  .header-image {
+    height: 500px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-top .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider-prev{
+    margin-left: 16px;
+  }
+  .slider-arrow{
+   display: none;
+  }
+  .slider-arrow-mobile{
+    display: block !important;
+  }
+  .logo-container {
+    margin-bottom: 10px;
+  }
+  
+  .text-right {
+    text-align: center;
+  }
+  
+  .header-image {
+    height: 450px;
+    padding-bottom: 40px;
+  }
+
+  .sous-titre {
+    font-size: 33px !important;
+    padding: 0 15px;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn-cta {
+    font-size: 25px;
+    width: 80%;
+  }
+  
+  .solutions-block {
+    padding: 40px 0;
+  }
+  
+  .solutions-block h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  .intro-text {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .card-item {
+    width: 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .card-item {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .header-image {
+    height: 400px;
+  }
+  .sous-titre {
+    font-size: 22px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-item {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+  
+  .header-image {
+    height: 400px;
+  }
+  .sous-titre {
+    font-size: 22px !important;
+  }
+}
+
+/* Position fixe en bas à droite */
+#backtotop {
+  background: url(../img/backtotop.png) no-repeat center center;
+  border: 0;
+  bottom: 20px;
+  cursor: pointer;
+  display: none;
+  height: 70px;
+  position: fixed;
+  right: 20px;
+  text-indent: -9999px;
+  width: 70px;
+  z-index: 300;
+}
+#backtotop:hover {
+  opacity: 0.8;
+}
