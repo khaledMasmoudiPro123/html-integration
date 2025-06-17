@@ -135,65 +135,6 @@ html {
   text-decoration: underline;
 }
 
-/* Responsive */
-@media (max-width: 815px) {
-  .slider-prev {
-    left: -10px !important;
-  }
-
-  .slider-next {
-    right: -10px !important;
-  }
-  .cta-buttons {
-    margin-right: 0px !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .header-top {
-    height: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  .header-top .row {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .header-top .col-md-6 {
-    flex: 0 0 100%;
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .logo-container {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-
-  .slogan {
-    font-size: 24px;
-    margin-left: 0;
-    margin-top: 10px;
-  }
-
-  .text-right {
-    text-align: center;
-  }
-
-  .solutions-block h1 {
-    font-size: 35px !important;
-    text-align: center !important;
-  }
-
-  .margin-left-120 {
-    margin-left: 0px;
-  }
-
-}
-
 /* Header Principal */
 .header-main {
   padding: 0;
@@ -275,31 +216,7 @@ html {
   text-decoration: none;
 }
 
-/* Pour les très grands écrans */
-@media (min-width: 1920px) {
-  .header-image {
-    height: 816px;
-    background-image: url(../img/header-image-large.jpg) !important;
-  }
 
-  .btn-cta {
-    padding: 18px 40px;
-    font-size: 40px;
-    min-width: 220px;
-  }
-
-  .sous-titre {
-    margin-right: 100px;
-  }
-}
-
-
-
-@media (max-width: 1280px) {
-  .intro-text{
-    font-size: 20px !important;
-  }
-}
 
 /* Sections des Solutions */
 .solutions-block {
@@ -720,114 +637,6 @@ html {
   font-size: 14px;
 }
 
-/* Responsive adjustments */
-@media (max-width: 992px) {
-  .engages-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .engages-card-large, .engages-card-audio {
-    grid-column: span 2;
-  }
-  .engages-biodiversite .section-title {
-    font-size: 50px;
-  }
-}
-
-@media (max-width: 768px) {
-  .engages-card-audio {
-    flex-direction: column;
-  }
-
-  .engages-card-audio .card-link {
-    flex-direction: column;
-  }
-
-  .engages-card-audio .card-image,
-  .engages-card-audio .card-content {
-    width: 100%;
-    flex: 0 0 auto;
-  }
-
-  .engages-card-audio .card-image {
-    height: 200px;
-  }
-}
-
-@media (max-width: 576px) {
-  .engages-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .engages-card-large, .engages-card-audio {
-    grid-column: span 1;
-  }
-}
-
-/* Responsive */
-
-@media (max-width: 1470px) {
-
-  .sous-titre {
-    font-size: 40px;
-  }
-  .btn-cta {
-    font-size: 32px;
-  }
-}
-/*DES SOLUTIONS POUR LES
-CITOYEN·NES*/
-@media (max-width: 1200px) {
-
-  .solutions-block h2{
-    font-size: 35px
-  }
-  .solutions-block h1 {
-    font-size: 40px;
-    clear: both;
-    margin-left: 20px;
-  }
-  .margin-left-120 {
-    margin-left: 90px;
-  }
-}
-
-@media (max-width: 1100px) {
-
-  .sous-titre {
-    font-size: 36px;
-    font-weight: 500;
-  }
-  .btn-cta {
-    font-size: 27px;
-    font-weight: 800;
-  }
-
-  .header-image {
-    height: 630px;
-  }
-}
-
-@media (max-width: 576px) {
-  .engages-grid {
-    grid-template-columns: 1;
-  }
-  
-  .engages-card-large,
-  .engages-card-audio {
-    grid-column: span 1;
-  }
-  
-  .engages-card .card-image {
-    height: 160px;
-  }
-  
-  .engages-card-large .card-image {
-    height: 180px;
-  }
-}
-
-
 /* Section La biodiversité part en campagne */
 .biodiversite-campagne {
   padding: 40px 0;
@@ -894,23 +703,6 @@ CITOYEN·NES*/
   padding-left: 10px;
 }
 
-/* Media query pour mobile */
-@media (max-width: 768px) {
-  .biodiversite-campagne .col-md-6:first-child,
-  .biodiversite-campagne .col-md-6:last-child {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .biodiversite-campagne h2 {
-    font-size: 24px;
-  }
-
-  .biodiversite-campagne .intro-text {
-    font-size: 13px;
-  }
-}
-
 /* Ajustements pour correspondre à la maquette */
 .biodiversite-campagne .container {
   max-width: 1000px;
@@ -934,125 +726,28 @@ CITOYEN·NES*/
   border: 0;
 }
 
+/* Position fixe en bas à droite */
+#backtotop {
+  background: url(../img/backtotop.png) no-repeat center center;
+  border: 0;
+  bottom: 20px;
+  cursor: pointer;
+  display: none;
+  height: 70px;
+  position: fixed;
+  right: 20px;
+  text-indent: -9999px;
+  width: 70px;
+  z-index: 300;
+}
+#backtotop:hover {
+  opacity: 0.8;
+}
 
 /* Responsive */
-@media (max-width: 991px) {
-  .solutions-block h2 {
-    font-size: 30px;
-  }
-  
-  .card-item {
-    width: 33.333%;
-    flex: 0 0 33.333%;
-  }
-
-  .engages-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .engages-card-large {
-    grid-column: span 2;
-  }
-
-  .engages-card-audio {
-    grid-column: span 1;
-  }
-  /*Bloc "Header principal" */
-  .sous-titre {
-    font-size: 30px;
-    font-weight: 800;
-  }
-  .btn-cta {
-    font-size: 20px;
-    font-weight: 1000;
-  }
-
-  .header-image {
-    height: 500px;
-  }
-}
-
-@media (max-width: 767px) {
-  .header-top .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .slider-prev{
-    margin-left: 16px;
-  }
-  .slider-arrow{
-   display: none;
-  }
-  .slider-arrow-mobile{
-    display: block !important;
-  }
-  .logo-container {
-    margin-bottom: 10px;
-  }
-  
-  .text-right {
-    text-align: center;
-  }
-  
-  .header-image {
-    height: 450px;
-    padding-bottom: 40px;
-  }
-
-  .sous-titre {
-    font-size: 33px !important;
-    padding: 0 15px;
-  }
-  
-  .cta-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .btn-cta {
-    font-size: 25px;
-    width: 80%;
-  }
-  
-  .solutions-block {
-    padding: 40px 0;
-  }
-  
-  .solutions-block h2 {
-    font-size: 28px;
-    text-align: center;
-  }
-  
-  .intro-text {
-    font-size: 16px;
-    text-align: center;
-  }
-  
-  .card-item {
-    width: 50%;
-    flex: 0 0 50%;
-  }
-}
-
-@media (max-width: 500px) {
-  .card-item {
-    width: 100%;
-    flex: 0 0 100%;
-  }
-
-  .header-image {
-    height: 400px;
-  }
-  .sous-titre {
-    font-size: 22px !important;
-  }
-}
 
 /*mobile*/
 @media (max-width: 480px) {
-
   .logo-rf {
     height: 60px;
   }
@@ -1095,7 +790,7 @@ CITOYEN·NES*/
   .engages-biodiversite .section-title {
     font-size: 40px;
   }
-  
+
   .header-image {
     height: 400px;
   }
@@ -1104,20 +799,334 @@ CITOYEN·NES*/
   }
 }
 
-/* Position fixe en bas à droite */
-#backtotop {
-  background: url(../img/backtotop.png) no-repeat center center;
-  border: 0;
-  bottom: 20px;
-  cursor: pointer;
-  display: none;
-  height: 70px;
-  position: fixed;
-  right: 20px;
-  text-indent: -9999px;
-  width: 70px;
-  z-index: 300;
+@media (max-width: 500px) {
+  .card-item {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .header-image {
+    height: 400px;
+  }
+  .sous-titre {
+    font-size: 22px !important;
+  }
 }
-#backtotop:hover {
-  opacity: 0.8;
+
+@media (max-width: 576px) {
+  .engages-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .engages-card-large,
+  .engages-card-audio {
+    grid-column: span 1;
+  }
+
+  .engages-card .card-image {
+    height: 160px;
+  }
+
+  .engages-card-large .card-image {
+    height: 180px;
+  }
 }
+
+@media (max-width: 768px) {
+  .header-top .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-rf {
+    height: 80px;
+  }
+  .logo-ofb {
+    height: 60px;
+  }
+
+  .text-right {
+    margin-bottom:0px;
+  }
+
+  .slider-prev{
+    margin-left: 16px;
+  }
+  .slider-arrow{
+    display: none;
+  }
+  .slider-arrow-mobile{
+    display: block !important;
+  }
+  .logo-container {
+    margin-bottom: 10px;
+  }
+
+  .text-right {
+    text-align: center;
+  }
+
+  .header-image {
+    height: 450px;
+    padding-bottom: 40px;
+  }
+
+  .sous-titre {
+    font-size: 33px !important;
+    padding: 0 15px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-cta {
+    font-size: 25px;
+    width: 80%;
+  }
+
+  .solutions-block {
+    padding: 40px 0;
+  }
+
+  .solutions-block h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .intro-text {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .card-item {
+    width: 50%;
+    flex: 0 0 50%;
+  }
+
+  .header-top {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .header-top .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .header-top .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .logo-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .slogan {
+    font-size: 24px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .text-right {
+    text-align: center;
+  }
+
+  .solutions-block h1 {
+    font-size: 35px !important;
+    text-align: center !important;
+  }
+
+  .margin-left-120 {
+    margin-left: 0px;
+  }
+
+  .engages-card-audio {
+    flex-direction: column;
+  }
+
+  .engages-card-audio .card-link {
+    flex-direction: column;
+  }
+
+  .engages-card-audio .card-image,
+  .engages-card-audio .card-content {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .engages-card-audio .card-image {
+    height: 200px;
+  }
+
+  .biodiversite-campagne .col-md-6:first-child,
+  .biodiversite-campagne .col-md-6:last-child {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .biodiversite-campagne h2 {
+    font-size: 24px;
+  }
+
+  .biodiversite-campagne .intro-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .engages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .engages-card-large, .engages-card-audio {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 815px) {
+  .slider-prev {
+    left: -10px !important;
+  }
+
+  .slider-next {
+    right: -10px !important;
+  }
+  .cta-buttons {
+    margin-right: 0px !important;
+  }
+  .header-content p.sous-titre {
+    font-size: 30px !important;
+  }
+  .header-content .cta-buttons .btn-cta {
+    font-size: 19px !important;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .header-content .sous-titre {
+    font-size: 32px !important;
+  }
+  .header-content .btn-cta {
+    font-size: 22px !important;
+  }
+
+  .engages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .engages-card-large, .engages-card-audio {
+    grid-column: span 2;
+  }
+  .engages-biodiversite .section-title {
+    font-size: 50px;
+  }
+
+  .solutions-block h2 {
+    font-size: 30px;
+  }
+
+  .card-item {
+    width: 33.333%;
+    flex: 0 0 33.333%;
+  }
+
+  .engages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .engages-card-large {
+    grid-column: span 2;
+  }
+
+  .engages-card-audio {
+    grid-column: span 1;
+  }
+
+  .header-image {
+    height: 500px;
+  }
+}
+
+@media (max-width: 1100px) {
+
+  .btn-cta {
+    font-size: 28px !important;
+  }
+  .sous-titre {
+    font-size: 36px !important;
+    font-weight: 500;
+  }
+  .btn-cta {
+    font-size: 27px;
+    font-weight: 800;
+  }
+
+  .header-image {
+    height: 630px;
+  }
+  .btn-cta {
+    font-size: 28px;
+  }
+}
+
+/*DES SOLUTIONS POUR LES
+CITOYEN·NES*/
+@media (max-width: 1200px) {
+
+  .solutions-block h2{
+    font-size: 35px
+  }
+  .solutions-block h1 {
+    font-size: 40px;
+    clear: both;
+    margin-left: 20px;
+  }
+  .margin-left-120 {
+    margin-left: 90px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .intro-text{
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 1470px) {
+
+  .sous-titre {
+    font-size: 40px;
+  }
+  .btn-cta {
+    font-size: 32px;
+  }
+}
+
+/* Pour les très grands écrans */
+@media (min-width: 1920px) {
+  .header-image {
+    height: 816px;
+    background-image: url(../img/header-image-large.jpg) !important;
+  }
+
+  .btn-cta {
+    padding: 18px 40px;
+    font-size: 40px;
+    min-width: 220px;
+  }
+
+  .sous-titre {
+    margin-right: 100px;
+  }
+}
+
