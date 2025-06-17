@@ -1059,11 +1059,19 @@ html {
 
 @media (max-width: 1100px) {
 
+  .slider-prev {
+    left: -15px !important;
+  }
+
+  .slider-next {
+    right: -15px !important;
+  }
+
   .btn-cta {
     font-size: 28px !important;
   }
   .sous-titre {
-    font-size: 36px !important;
+    font-size: 37px !important;
     font-weight: 500;
   }
   .btn-cta {
@@ -1129,4 +1137,3 @@ CITOYEN·NES*/
     margin-right: 100px;
   }
 }
-
