@@ -1126,4 +1126,7 @@ html {
     .sous-titre {
         font-size: 22px !important;
     }
+    .engages-card h3 {
+        font-size: 20px !important;
+    }
 }
