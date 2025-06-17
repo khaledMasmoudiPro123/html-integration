@@ -814,6 +814,13 @@ html {
 }
 
 @media (max-width: 576px) {
+
+  .logo-rf {
+    height: 80px;
+  }
+  .logo-ofb {
+    height: 60px;
+  }
   .engages-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -833,18 +840,22 @@ html {
   }
 }
 
+@media (max-width: 576px) {
+  .engages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .engages-card-large, .engages-card-audio {
+    grid-column: span 1;
+  }
+}
+
 @media (max-width: 768px) {
   .header-top .row {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .logo-rf {
-    height: 80px;
-  }
-  .logo-ofb {
-    height: 60px;
+    gap: 2px;
   }
 
   .text-right {
@@ -982,17 +993,10 @@ html {
   }
 }
 
-@media (max-width: 576px) {
-  .engages-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .engages-card-large, .engages-card-audio {
-    grid-column: span 1;
-  }
-}
-
 @media (max-width: 815px) {
+  .header-top .row{
+    gap: 2px;
+  }
   .slider-prev {
     left: -10px !important;
   }
