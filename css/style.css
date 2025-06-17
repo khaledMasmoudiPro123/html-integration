@@ -729,6 +729,9 @@ html {
   .engages-card-large, .engages-card-audio {
     grid-column: span 2;
   }
+  .engages-biodiversite .section-title {
+    font-size: 50px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -807,7 +810,7 @@ CITOYEN·NES*/
 
 @media (max-width: 576px) {
   .engages-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1;
   }
   
   .engages-card-large,
