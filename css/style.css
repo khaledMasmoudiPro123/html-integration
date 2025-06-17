@@ -891,16 +891,15 @@ html {
     }
 }
 
-@media (max-width: 1470px) {
-
+@media (max-width: 1536px) {
     .sous-titre {
-        font-size: 40px;
-    }
-    .btn-cta {
-        font-size: 32px;
+        font-size: 47px;
     }
 }
 
+@media (max-width: 1470px) {
+
+}
 @media (max-width: 1200px) {
 
     .solutions-block h2{
